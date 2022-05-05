@@ -1,6 +1,6 @@
 @extends('templates.base')
 
-@section('title', 'Books Listing')
+@section('title', 'movies')
 
 @section('main')
     <div class="container">
@@ -8,10 +8,10 @@
             
             <div class="card">
                 <img src="{{$movie->locandina}}" alt="">
-                <p><b>Titolo:</b>{{ $movie->title }}</p>
-                <p><b>Titolo originale:</b>{{ $movie->original_title }}</p>
-                <p><b>Voto:</b>{{ $movie->vote }}</p>
-                <p><b>Nazione:</b>{{ $movie->nationality }}</p>
+                <p><b>Titolo:</b> {{ $movie->title }}</p>
+                <p><b>Titolo originale:</b> {{ $movie->original_title }}</p>
+                <p><b>Voto:</b> {{ $movie->vote }}</p>
+                <p><b>Nazione:</b> {{ $movie->nationality }}</p>
                 
             </div>
         @endforeach
